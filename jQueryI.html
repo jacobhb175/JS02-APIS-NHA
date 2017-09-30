@@ -4,33 +4,15 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!--<script type="text/javascript" src="jQueryI.js"></script>
 		<script type="text/javascript" src="FileStructure.js"></script>-->
-		<script type="text/javascript" src="jQueryI.js"></script>
 		<link rel="stylesheet" href="FileStructure.css">
 	</head>
 	<body>
 		<p>Political Allegiance:<br>
   			<input type="text" id="politicalAllegiance"><br>
   			Citizenship<br>
-  			<input type="text" id="citizenship"><br>
+  			<input type="text" id=citizenship><br>
   			<button id="Submit">Submit</button>
 		</p>
-	</body
+		<script type="text/javascript" src="jQueryI.js"></script>
+	</body>
 </html>
-
-<script>
-	let politicalAllegiance = $('#politicalAllegiance').val();
-	let citizenship = $('#citizenship').val();
-	let recieveData = [];
-	$("#submit").click(function () {
-		if (politicalAllegiance === "" || citizenship === "") {
-			alert("Please resubmit your form.")
-		}
-		else {
-			alert("Your data is being processed... please wait while we file your information.");
-			recieveData.push({politicalAllegiance: politicalAllegiance, citizenship: citizenship});
-
-			alert("Data:");
-			// + recieveData);
-		}
-	});
-</script>
