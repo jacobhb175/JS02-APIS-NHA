@@ -1,12 +1,12 @@
-$("#button").click(function () {
-	const i = $("#inputInt").val();
-	console.log(inputInt);
-	$("p").append(inputInt)
-	for ( i > 0; i--){
-    	alert(i);
-    	if(i === 0){
-    		alert("Blast Off!");
-    		i = 10
-    	});
-	});
+// $(get the page element with jQuery).click(run this function)
+
+$("#button").click(function () {	
+	let input = $("#inputInt").val();
+	for (i = 0; i > -1; i--) {
+		console.log(input, i);
+		$("p").html(input);
+		if (i == 0) {
+			alert("Blast Off!")
+		}
+	};
 });
